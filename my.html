@@ -29,54 +29,25 @@
 		</style>
 	</head>
 	<body>
-		<div id="slider" class="mui-slider">
-			<div class="mui-slider-group mui-slider-loop">
-				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="./images/04.jpg">
-					</a>
-				</div>
-				<!-- 第一张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="./images/01.jpg">
-					</a>
-				</div>
-				<!-- 第二张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="./images/02.jpg">
-					</a>
-				</div>
-				<!-- 第三张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="./images/03.jpg">
-					</a>
-				</div>
-				<!-- 第四张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="./images/04.jpg">
-					</a>
-				</div>
-				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="./images/01.jpg">
-					</a>
-				</div>
-			</div>
-			<div class="mui-slider-indicator">
-				<div class="mui-indicator mui-active"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-			</div>
+		<h1>用户注册</h1>
+		<div class="wrapper">
+			<form class="mui-input-group">
+			    <div class="mui-input-row">
+			        <label>用户名</label>
+			    <input type="text" class="mui-input-clear" placeholder="请输入用户名">
+			    </div>
+			    <div class="mui-input-row">
+			        <label>密码</label>
+			        <input type="password" class="mui-input-password" placeholder="请输入密码">
+			    </div>
+			    <div class="mui-button-row">
+			        <button type="button" class="mui-btn mui-btn-primary" >确认</button>
+			        <button type="button" class="mui-btn mui-btn-danger" >取消</button>
+			    </div>
+			</form>
 		</div>
 		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active">
+			<a class="mui-tab-item " href="./index.html">
 				<div class="iconfont icon-shouye2"></div>
 				<div class="mui-tab-label">首页</div>
 			</a>
@@ -88,7 +59,7 @@
 				<div class="iconfont icon-paihangbang"></div>
 				<div class="mui-tab-label">榜单</div>
 			</a>
-			<a class="mui-tab-item" href="./my.html">
+			<a class="mui-tab-item mui-active">
 				<div class="iconfont icon-pinpai"></div>
 				<div class="mui-tab-label">我的</div>
 			</a>
@@ -96,7 +67,6 @@
 	</body>
 	<script src="js/mui.min.js"></script>
 	<script type="text/javascript">
-		// mui中屏蔽了点击事件，下面的代码表示不让它屏蔽点击事件
 		mui("body").on("tap","a",function(){
 			document.location.href = this.href;
 		})

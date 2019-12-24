@@ -29,54 +29,9 @@
 		</style>
 	</head>
 	<body>
-		<div id="slider" class="mui-slider">
-			<div class="mui-slider-group mui-slider-loop">
-				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="./images/04.jpg">
-					</a>
-				</div>
-				<!-- 第一张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="./images/01.jpg">
-					</a>
-				</div>
-				<!-- 第二张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="./images/02.jpg">
-					</a>
-				</div>
-				<!-- 第三张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="./images/03.jpg">
-					</a>
-				</div>
-				<!-- 第四张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="./images/04.jpg">
-					</a>
-				</div>
-				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="./images/01.jpg">
-					</a>
-				</div>
-			</div>
-			<div class="mui-slider-indicator">
-				<div class="mui-indicator mui-active"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-			</div>
-		</div>
+		<h1>这是一个榜单的页面</h1>
 		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active">
+			<a class="mui-tab-item " href="./index.html">
 				<div class="iconfont icon-shouye2"></div>
 				<div class="mui-tab-label">首页</div>
 			</a>
@@ -84,7 +39,7 @@
 				<div class="iconfont icon-fenlei"></div>
 				<div class="mui-tab-label">软件</div>
 			</a>
-			<a class="mui-tab-item" href="./bangdan.html">
+			<a class="mui-tab-item mui-active" >
 				<div class="iconfont icon-paihangbang"></div>
 				<div class="mui-tab-label">榜单</div>
 			</a>
@@ -96,7 +51,6 @@
 	</body>
 	<script src="js/mui.min.js"></script>
 	<script type="text/javascript">
-		// mui中屏蔽了点击事件，下面的代码表示不让它屏蔽点击事件
 		mui("body").on("tap","a",function(){
 			document.location.href = this.href;
 		})
