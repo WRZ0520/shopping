@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>应用商城</title>
+		<link rel="shortcuticon" href="/favicon.ico" type="image/x-icon" />
+		<!-- 引入压缩之后的css文件 -->
+		<!-- <link href="css/mui.min.css" rel="stylesheet" /> -->
+
+		<!-- 引入没有压缩的css文件 -->
+		<link rel="stylesheet" href="./css/mui.css">
+		<!-- 引入阿里的字体图标 -->
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578621_15u24kz2j52.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578341_l63t45i1bcr.css">
+		<style>
+			.wrapper{
+				padding: 25px;
+			}
+		</style>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+
+		<style>
+			.mui-bar-tab .mui-tab-item.mui-active {
+				color: orange;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="mui-bar">
+			<a class="mui-action-back mui-icon mui-icon-left-nav "></a>
+			<h1 class="mui-title">我的资料</h1>
+		</div>
+		</br></br><br/>
+	<form class="mui-input-group">	
+	    <div class="mui-input-row">
+	        <label>姓名：</label>
+	    <input type="text" class="mui-input-clear" placeholder="请输入姓名">
+	    </div>
+	    <div class="mui-input-row">
+	        <label>手机号：</label>
+	    <input type="text" class="mui-input-clear" placeholder="请输入手机号">
+	    </div>
+		<div class="mui-input-row">
+		    <label>邮箱：</label>
+		<input type="text" class="mui-input-clear" placeholder="请输入邮箱">
+		</div>
+	</form>	
+	</br>
+	<a href="my.html">
+		<button type="button" class="mui-btn mui-btn-success mui-btn-block ">保存</button>
+	</a>
+		
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui("body").on("tap","a",function(){
+			document.location.href = this.href;
+		})
+		
+	</script>
+</html>

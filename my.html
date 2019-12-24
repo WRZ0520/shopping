@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="./css/mui.css">
 		<!-- 引入阿里的字体图标 -->
 		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578621_15u24kz2j52.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578341_l63t45i1bcr.css">
 		<style>
 			.wrapper{
 				padding: 25px;
@@ -29,23 +30,107 @@
 		</style>
 	</head>
 	<body>
-		<h1>用户注册</h1>
-		<div class="wrapper">
-			<form class="mui-input-group">
-			    <div class="mui-input-row">
-			        <label>用户名</label>
-			    <input type="text" class="mui-input-clear" placeholder="请输入用户名">
-			    </div>
-			    <div class="mui-input-row">
-			        <label>密码</label>
-			        <input type="password" class="mui-input-password" placeholder="请输入密码">
-			    </div>
-			    <div class="mui-button-row">
-			        <button type="button" class="mui-btn mui-btn-primary" >确认</button>
-			        <button type="button" class="mui-btn mui-btn-danger" >取消</button>
-			    </div>
-			</form>
+		<div class="mui-input-row mui-search">
+		<input type="search" class="mui-input-clear" placeholder="搜索">
 		</div>
+		<div class="mui-card">
+			<ul class="mui-table-view">
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="images/01.jpg" >
+						
+			            <div class="mui-media-body">
+			                <h4>shopping</h4>
+			                <div> <img src="images/vip1%20.png" alt="#"></div>
+			            </div>
+			        </a>
+			    </li>
+			</ul>
+		</div>
+		
+		
+		<ul class="mui-table-view mui-grid-view mui-grid-3">
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon icon-gerenxinxi"></span>
+				<div class="mui-media-body">积分</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-chatbubble">
+				<div class="mui-media-body">评论</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			<a href="#">
+				<span class="mui-icon mui-icon-chatbubble"></span>
+				<div class="mui-media-body">礼包</div>
+			</a>
+		</li>
+		</ul>
+		
+		
+		
+		<ul class="mui-table-view">
+			<ul class="mui-table-view-cell ">
+				<a class="mui-navigate-right" href="personaldata.html">
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-right">
+							<div class="iconfont icon-paihangbang"></div>
+						</li>
+						<li class="mui-table-view-cell mui-right">
+							<div class="mui-tab-label">我的资料</div>
+						</li>
+					</ul>
+				</a>
+			</ul>
+			<ul class="mui-table-view-cell">
+				<a class="mui-navigate-right" href="password.html">
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-right">
+							<div class="iconfont icon-paihangbang"></div>
+						</li>
+						<li class="mui-table-view-cell mui-right">
+							<div class="mui-tab-label">修改密码</div>
+						</li>
+					</ul>
+				</a>
+			</ul>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-right">
+							<div class="iconfont icon-paihangbang"></div>
+						</li>
+						<li class="mui-table-view-cell mui-right">
+							<div class="mui-tab-label">我的收藏</div>
+						</li>
+					</ul>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right" href="srtting.html">
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-right">
+							<div class="iconfont icon-paihangbang"></div>
+						</li>
+						<li class="mui-table-view-cell mui-right">
+							<div class="mui-tab-label">设置</div>
+						</li>
+					</ul>
+				</a>
+			</li>
+			<li>
+				<h3 align="center">
+					<a href="login.html">
+					<button type="button" class="mui-btn mui-btn-outlined" >退出登录</button>
+					</a>
+				</h3>
+			</li>
+		</ul>
+			
+		
 		<nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item " href="./index.html">
 				<div class="iconfont icon-shouye2"></div>
