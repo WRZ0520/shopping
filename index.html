@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>应用商城</title>
+		<link rel="shortcuticon" href="/favicon.ico" type="image/x-icon" />
+		<!-- 引入压缩之后的css文件 -->
+		<!-- <link href="css/mui.min.css" rel="stylesheet" /> -->
+
+		<!-- 引入没有压缩的css文件 -->
+		<link rel="stylesheet" href="./css/mui.css">
+		<!-- 引入阿里的字体图标 -->
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578621_15u24kz2j52.css">
+		<style>
+			.wrapper{
+				padding: 25px;
+			}
+		</style>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+
+		<style>
+			.mui-bar-tab .mui-tab-item.mui-active {
+				color: orange;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">			
+			<div class="mui-input-row mui-search">
+			<input type="search" class="mui-input-clear" placeholder="搜索">
+			</div>
+		</header>
+					
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="./images/04.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="./images/01.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="./images/02.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="./images/03.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="./images/04.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="./images/01.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		
+		<ul class="mui-table-view mui-grid-view mui-grid-9">
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="./fenlei.html">
+					<span class="mui-icon mui-icon-list"></span>
+					<div class="mui-media-body">分类</div>
+				</a></li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="./remen.html">
+					<span class="mui-icon mui-icon-star"></span>
+					<div class="mui-media-body">热门</div>
+				</a></li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="./bibei.html">
+					<span class="mui-icon mui-icon-info"></span>
+					<div class="mui-media-body">必备</div>
+				</a></li>
+			
+		</ul>
+		
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<h4>精选应用</h4>
+					</a>
+				</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/meituan.jpg">
+				<div class="mui-pull-caption">
+					美团
+				<p class="mui-ellipsis">美食外卖啥都有,电影酒店巨优惠</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://i.meituan.com/client"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/wangyi.jpg">
+				<div class="mui-pull-caption">
+					网易云音乐
+				<p class="mui-ellipsis">千万曲库，口碑爆棚的音乐APP</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/kuaishou.jpg">
+				<div class="mui-pull-caption">
+					快手
+				<p class="mui-ellipsis">看见每一种生活</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/58.jpg">
+				<div class="mui-pull-caption">
+					58同城
+				<p class="mui-ellipsis">租房招聘兼职二手车</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/12306.jpg">
+				<div class="mui-pull-caption">
+					铁路12306
+				<p class="mui-ellipsis">铁路官方购票手机客户端</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+		<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<h4>发现精彩</h4>
+					</a>
+				</li>
+		<div class="mui-content">
+			
+		    <div class="mui-slider">
+		        <div class="mui-slider-group mui-slider-loop">
+		        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<img class="mui-media-object" src="./images/f5.jpg">
+		                           </a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<img class="mui-media-object" src="./images/f6.jpg">
+		                       </a></li>
+		                </ul>
+		            </div>
+		            <div class="mui-slider-item">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		                    <img class="mui-media-object" src="./images/f1.jpg">
+		                           </a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		                    <img class="mui-media-object" src="./images/f2.jpg">
+		                       </a></li>
+		                </ul>
+		            </div>
+		            <div class="mui-slider-item">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		                    <img class="mui-media-object" src="./images/f3.jpg">
+		                           </a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		                    <img class="mui-media-object" src="./images/f4.jpg">
+		                       </a></li>
+		                </ul>
+		            </div>
+					<div class="mui-slider-item">
+					    <ul class="mui-table-view mui-grid-view">
+					        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+					        <img class="mui-media-object" src="./images/f5.jpg">
+					               </a></li>
+					        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+					        <img class="mui-media-object" src="./images/f6.jpg">
+					           </a></li>
+					    </ul>
+					</div>
+		            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		                    <img class="mui-media-object" src="./images/f1.jpg">
+		                           </a></li>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		                    <img class="mui-media-object" src="./images/f2.jpg">
+		                       </a></li>
+		                </ul>
+		            </div>
+		        </div>
+		        
+		    </div>
+		</div>
+		</ul>
+		
+		
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<h4>查看更多</h4>
+					</a>
+				</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/k.jpg">
+				<div class="mui-pull-caption">
+					全民K歌
+				<p class="mui-ellipsis">五音不全也能唱，K歌软件的PS</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/xima.jpg">
+				<div class="mui-pull-caption">
+					喜马拉雅
+				<p class="mui-ellipsis">听书听课听段子，想听啥都有</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/jinri.jpg">
+				<div class="mui-pull-caption">
+					今日头条
+				<p class="mui-ellipsis">答题赢奖金，知识造英雄</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/tenxunditu.jpg">
+				<div class="mui-pull-caption">
+					腾讯地图
+				<p class="mui-ellipsis">实时公交路线导航路况查询出行</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/baici.jpg">
+				<div class="mui-pull-caption">
+					百词斩
+				<p class="mui-ellipsis">背单词学英语必备</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/"  type="button" class="mui-btn mui-btn-green">
+						安装</a>
+				</div>								
+			</li>
+			<li class="mui-table-view-cell mui-media">	
+				<div class="mui-pull-caption">	
+				</div>								
+			</li>
+		</ul>
+		
+		
+		
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active">
+				<div class="iconfont icon-shouye2"></div>
+				<div class="mui-tab-label">首页</div>
+			</a>
+			<a class="mui-tab-item" href="./views/ruanjian.html">
+				<div class="iconfont icon-fenlei"></div>
+				<div class="mui-tab-label">软件</div>
+			</a>
+			<a class="mui-tab-item" href="./views/bangdan.html">
+				<div class="iconfont icon-paihangbang"></div>
+				<div class="mui-tab-label">榜单</div>
+			</a>
+			<a class="mui-tab-item" href="./views/my.html">
+				<div class="iconfont icon-pinpai"></div>
+				<div class="mui-tab-label">我的</div>
+			</a>
+		</nav>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		// mui中屏蔽了点击事件，下面的代码表示不让它屏蔽点击事件
+		mui("body").on("tap","a",function(){
+			document.location.href = this.href;
+		})
+	</script>
+</html>
