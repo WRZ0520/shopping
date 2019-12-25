@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>应用商城</title>
+		<link rel="shortcuticon" href="/favicon.ico" type="image/x-icon" />
+		<!-- 引入压缩之后的css文件 -->
+		<!-- <link href="css/mui.min.css" rel="stylesheet" /> -->
+
+		<!-- 引入没有压缩的css文件 -->
+		<link rel="stylesheet" href="./css/mui.css">
+		<!-- 引入阿里的字体图标 -->
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578621_15u24kz2j52.css">
+		<style>
+			.wrapper{
+				padding: 25px;
+			}
+			.mui-btn{
+				margin-top: 10px;
+				margin-left: 40px;
+			}
+			.mui-top{
+				margin-top: 50px;
+			}
+			.mui-juli-top{
+				margin-top: 10px;
+			}
+			.mui-red{
+				color: red;
+			}
+			.mui-orange{
+				color: orange;
+			}
+			.mui-yellow{
+				color: yellow;
+			}
+		</style>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+
+		<style>
+			.mui-bar-tab .mui-tab-item.mui-active {
+				color: orange;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+		<div class="mui-bar">
+			<a class="mui-action-back mui-icon mui-icon-left-nav "></a>
+			<h1 class="mui-title">新品榜</h1>
+		</div>
+		</header>
+		
+		<div class="mui-slider mui-top">
+			<div class="mui-slider">
+				
+				<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active">
+							新品榜
+						</a>
+						<a class="mui-control-item " href="wangyou.html">
+						  网游榜
+						</a>
+						<a class="mui-control-item" href="danji.html">
+						   单机榜
+						</a>
+						<a class="mui-control-item " href="nanshen.html">
+						   男神榜
+						</a>
+						<a class="mui-control-item" href="nvshen.html">
+						   女神榜
+						</a>
+						<a class="mui-control-item" href="biaosheng.html">
+						   飙升榜
+						</a>
+					</div>
+				</div>
+				
+				<div id="slider" class="mui-slider mui-juli-top" >
+				  <div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+					  <a href="#">
+						<img src="images/26.jpg">
+					  </a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+					  <a href="#">
+						<img src="images/22.jpg">
+					  </a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+					  <a href="#">
+						<img src="images/25.JPG">
+					  </a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+					  <a href="#">
+						<img src="images/26.jpg">
+					  </a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+					  <a href="#">
+						<img src="images/22.jpg">
+					  </a>
+					</div>
+				  </div>
+				  <div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				  </div>
+				</div>
+				
+				
+				<div class="mui-slider-group mui-slider-item ">
+					<div  class="mui-slider-item ">
+							<div class="mui-juli-top">
+								<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+										<div class="mui-pull-left mui-card-content-inner mui-red">
+											01
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/xiaoao.jpg">
+										<div class="mui-pull-caption">
+											新笑傲江湖
+											<p class="mui-ellipsis">114万次安装</p>
+										</div>
+										<div class="mui-pull-right">
+											<a href="http://xxa.wanmei.com/"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>									
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									
+										<div class="mui-pull-left mui-card-content-inner mui-orange">
+											02
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/lvyin.jpg">
+										<div class="mui-pull-caption">
+											绿茵之巅
+											<p class="mui-ellipsis">14万次安装</p>					
+										</div>
+										<div class="mui-pull-right">
+											<a href="http://lyzd.163.com/testflight/"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>
+									
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									
+										<div class="mui-pull-left mui-card-content-inner mui-yellow">
+											03
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/yinyang.jpg">
+										<div class="mui-pull-caption">
+											阴阳师：百闻牌
+											<p class="mui-ellipsis">56.6万次安装</p>					
+										</div>
+										<div class="mui-pull-right">
+											<a href="https://ssr.163.com/"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>
+									
+								</li>
+								<li class="mui-table-view-cell mui-media">
+								
+										<div class="mui-pull-left mui-card-content-inner">
+											04
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/shaonian.jpg">
+										<div class="mui-pull-caption">
+											少年三国志
+											<p class="mui-ellipsis">141万次安装</p>					
+										</div>
+										<div class="mui-pull-right">
+											<a href="http://sg.youzu.com/"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									
+										<div class="mui-pull-left mui-card-content-inner">
+											05
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/aolaxing.png">
+										<div class="mui-pull-caption">
+											奥拉星
+											<p class="mui-ellipsis">1484亿次安装</p>					
+										</div>
+										<div class="mui-pull-right">
+											<a href="https://www.taptap.com/app/84327"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									
+										<div class="mui-pull-left mui-card-content-inner">
+											06
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/huoxian.png">
+										<div class="mui-pull-caption">
+											火线警戒
+											<p class="mui-ellipsis">93.7万次安装</p>					
+										</div>
+										<div class="mui-pull-right">
+											<a href="https://www.taptap.com/app/176901"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									
+										<div class="mui-pull-left mui-card-content-inner">
+											07
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/liangzi.jpg">
+										<div class="mui-pull-caption">
+											量子特攻
+											<p class="mui-ellipsis">850万次安装</p>					
+										</div>
+										<div class="mui-pull-right">
+											<a href="https://lz.163.com/"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									
+										<div class="mui-pull-left mui-card-content-inner">
+											08
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/moli.png">
+										<div class="mui-pull-caption">
+											魔力契约
+											<p class="mui-ellipsis">47.3万次安装</p>					
+										</div>
+										<div class="mui-pull-right">
+											<a href="https://www.taptap.com/app/176576"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									
+										<div class="mui-pull-left mui-card-content-inner">
+											09
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/zhan.png">
+										<div class="mui-pull-caption">
+											战双帕弥什
+											<p class="mui-ellipsis">138万次安装</p>					
+										</div>
+										<div class="mui-pull-right">
+											<a href="https://www.taptap.com/app/130651"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									
+										<div class="mui-pull-left mui-card-content-inner">
+											10
+										</div>
+										<img class="mui-media-object mui-pull-left" src="images/guanlan.png">
+										<div class="mui-pull-caption">
+											灌篮高手
+											<p class="mui-ellipsis">75万次安装</p>					
+										</div>
+										<div class="mui-pull-right">
+											<a href="https://www.taptap.com/app/135988"  type="button" class="mui-btn mui-btn-green">
+												下载</a>
+										</div>
+								</li>								
+								<li class="mui-table-view-cell mui-media"></li>	
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell"></li>
+									<li class="mui-table-view-cell"></li>
+								</ul>
+							</ul>
+						</div>
+						</div>                           
+				</div>
+			</div>
+			</div>
+			
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="./index.html">
+				<div class="iconfont icon-shouye2"></div>
+				<div class="mui-tab-label">首页</div>
+			</a>
+			<a class="mui-tab-item" href="./ruanjian.html">
+				<div class="iconfont icon-fenlei"></div>
+				<div class="mui-tab-label">软件</div>
+			</a>
+			<a class="mui-tab-item mui-active" >
+				<div class="iconfont icon-paihangbang"></div>
+				<div class="mui-tab-label">榜单</div>
+			</a>
+			<a class="mui-tab-item" href="./my.html">
+				<div class="iconfont icon-pinpai"></div>
+				<div class="mui-tab-label">我的</div>
+			</a>
+		</nav>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui("body").on("tap","a",function(){
+			document.location.href = this.href;
+		})
+	</script>
+</html>
