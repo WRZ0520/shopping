@@ -17,6 +17,29 @@
 			.wrapper{
 				padding: 25px;
 			}
+			.box{
+				display: flex;
+				width: 200px;
+				height: 30px;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			.box1{
+				width: 40px;
+				height: 30px;
+			}
+			.box2{
+				width: 150px;
+				height: 30px;
+			}
+			.login{
+				font-size: 18px;
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+			.top{
+				margin-top: 60px;
+			}
 		</style>
 		<script type="text/javascript" charset="utf-8">
 			mui.init();
@@ -30,10 +53,15 @@
 		</style>
 	</head>
 	<body>
-		<div class="mui-input-row mui-search">
-		<input type="search" class="mui-input-clear" placeholder="搜索">
+		<div>
+		<header id="header" class="mui-bar mui-bar-nav">			
+					<div class="mui-input-row mui-search">
+					<input type="search" class="mui-input-clear" placeholder="搜索">
+					</div>
+				</header>
 		</div>
-		<div class="mui-card">
+		
+		<div class="mui-card top">
 			<ul class="mui-table-view">
 			    <li class="mui-table-view-cell mui-media">
 			        <a href="javascript:;">
@@ -52,19 +80,19 @@
 		<ul class="mui-table-view mui-grid-view mui-grid-3">
 		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 			<a href="#">
-				<span class="mui-icon icon-gerenxinxi"></span>
+				<img src="images/jifen.jpg" >
 				<div class="mui-media-body">积分</div>
 			</a>
 		</li>
 		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 			<a href="#">
-				<span class="mui-icon mui-icon-chatbubble">
+				<img src="images/pinglun.jpg" >
 				<div class="mui-media-body">评论</div>
 			</a>
 		</li>
 		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 			<a href="#">
-				<span class="mui-icon mui-icon-chatbubble"></span>
+				<img src="images/libao.jpg" >
 				<div class="mui-media-body">礼包</div>
 			</a>
 		</li>
@@ -73,63 +101,74 @@
 		
 		
 		<ul class="mui-table-view">
-			<ul class="mui-table-view-cell ">
-				<a class="mui-navigate-right" href="personaldata.html">
-					<ul class="mui-table-view mui-grid-view">
-						<li class="mui-table-view-cell mui-right">
-							<div class="iconfont icon-paihangbang"></div>
-						</li>
-						<li class="mui-table-view-cell mui-right">
-							<div class="mui-tab-label">我的资料</div>
-						</li>
-					</ul>
-				</a>
-			</ul>
-			<ul class="mui-table-view-cell">
-				<a class="mui-navigate-right" href="password.html">
-					<ul class="mui-table-view mui-grid-view">
-						<li class="mui-table-view-cell mui-right">
-							<div class="iconfont icon-paihangbang"></div>
-						</li>
-						<li class="mui-table-view-cell mui-right">
-							<div class="mui-tab-label">修改密码</div>
-						</li>
-					</ul>
-				</a>
-			</ul>
-			<li class="mui-table-view-cell">
-				<a class="mui-navigate-right">
-					<ul class="mui-table-view mui-grid-view">
-						<li class="mui-table-view-cell mui-right">
-							<div class="iconfont icon-paihangbang"></div>
-						</li>
-						<li class="mui-table-view-cell mui-right">
-							<div class="mui-tab-label">我的收藏</div>
-						</li>
-					</ul>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right" href="srtting.html">
+					<div class="box">
+						<div class="box1">
+						<img src="images/shezhi.jpg" >
+						</div>
+						<div class="box2">
+						设置
+						</div>
+					</div>
 				</a>
 			</li>
-			<li class="mui-table-view-cell">
-				<a class="mui-navigate-right" href="srtting.html">
-					<ul class="mui-table-view mui-grid-view">
-						<li class="mui-table-view-cell mui-right">
-							<div class="iconfont icon-paihangbang"></div>
-						</li>
-						<li class="mui-table-view-cell mui-right">
-							<div class="mui-tab-label">设置</div>
-						</li>
-					</ul>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right" href="personaldata.html">
+				<div class="box">
+					<div class="box1">
+					<img src="images/wode.jpg" >
+					</div>
+					<div class="box2">
+					我的资料
+					</div>
+				</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right" href="password.html">
+				<div class="box">
+					<div class="box1">
+					<img src="images/mima.jpg" >
+					</div>
+					<div class="box2">
+					修改密码
+					</div>
+				</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right" href="shoucang.html">
+				<div class="box">
+					<div class="box1">
+					<img src="images/shoucang.jpg" >
+					</div>
+					<div class="box2">
+					我的收藏
+					</div>
+				</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<div class="box">
+						<div class="box1">
+							<img src="images/anzhuang.jpg" >
+						</div>
+						<div class="box2">
+							安装记录
+						</div>
+					</div>
 				</a>
 			</li>
 			<li>
-				<h3 align="center">
+				<div align="center">
 					<a href="login.html">
-					<button type="button" class="mui-btn mui-btn-outlined" >退出登录</button>
+					<button type="button" class="login" >退出登录</button>
 					</a>
-				</h3>
+				</div>
 			</li>
 		</ul>
-			
 		
 		<nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item " href="./index.html">
@@ -145,7 +184,7 @@
 				<div class="mui-tab-label">榜单</div>
 			</a>
 			<a class="mui-tab-item mui-active">
-				<div class="iconfont icon-pinpai"></div>
+				<div class="iconfont icon-milu"></div>
 				<div class="mui-tab-label">我的</div>
 			</a>
 		</nav>
