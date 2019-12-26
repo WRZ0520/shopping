@@ -23,13 +23,15 @@
 
 		<style>
 			.mui-bar-tab .mui-tab-item.mui-active {
-				color: orange;
+				color: pink;
+			} 
+			.mui-font-size{
+				font-size: 16px;
 			}
 			
 		</style>
 	</head>
 	<body>
-
 		<header id="header" class="mui-bar mui-bar-nav">			
 			<div class="mui-input-row mui-search">
 			<input type="search" class="mui-input-clear" placeholder="搜索">
@@ -302,21 +304,21 @@
 		</ul>
 		
 
-		<nav class="mui-bar mui-bar-tab">
+		<nav class="mui-bar mui-bar-tab mui-font-size">
 			<a class="mui-tab-item mui-active">
-				<div class="iconfont icon-shouye2"></div>
+				<div class="iconfont icon-shengdanlaoren"></div>
 				<div class="mui-tab-label">首页</div>
 			</a>
 
-			<a class="mui-tab-item" href="./ruanjian.html">
+			<a class="mui-tab-item" href="ruanjian.html">
 				<div class="iconfont icon-fenlei"></div>
 				<div class="mui-tab-label">软件</div>
 			</a>
-			<a class="mui-tab-item" href="./bangdan.html">
+			<a class="mui-tab-item" href="bangdan.html">
 				<div class="iconfont icon-paihangbang"></div>
 				<div class="mui-tab-label">榜单</div>
 			</a>
-			<a class="mui-tab-item" href="./my.html">
+			<a class="mui-tab-item" href="my.html">
 
 				<div class="iconfont icon-pinpai"></div>
 				<div class="mui-tab-label">我的</div>
@@ -329,5 +331,6 @@
 		mui("body").on("tap","a",function(){
 			document.location.href = this.href;
 		})
+		
 	</script>
 </html>
