@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>应用商城</title>
+		<link rel="shortcuticon" href="/favicon.ico" type="image/x-icon" />
+		<!-- 引入压缩之后的css文件 -->
+		<!-- <link href="css/mui.min.css" rel="stylesheet" /> -->
+
+		<!-- 引入没有压缩的css文件 -->
+		<link rel="stylesheet" href="./css/mui.css">
+		<!-- 引入阿里的字体图标 -->
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578621_15u24kz2j52.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578341_l63t45i1bcr.css">
+		<style>
+
+			.wrapper{
+				padding: 25px;
+			}
+			
+		</style>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+
+		<style>
+			.mui-bar-tab .mui-tab-item.mui-active {
+				color: orange;
+			}
+			.love{
+				margin-left: 50px;
+			}
+			.size{
+				font-size: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-bar">
+			<a class="mui-action-back mui-icon mui-icon-left-nav "></a>
+			<h1 class="mui-title">评论</h1>
+		</div>
+
+		<ul class="mui-table-view">
+			<br />
+			<br />
+
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/meituan.jpg">
+				<div class="mui-pull-caption">
+					美团
+					<p class="mui-ellipsis">10111条评论</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://i.meituan.com/client" type="button" class="mui-btn mui-btn">
+						打开</a>
+				</div>
+				<div class="love ">
+					<div class="size">
+						<img src="images/xing.jpg" />&nbsp;&nbsp;&nbsp;版本号：8.2.0
+					</div>
+					<h5 style="color: #000000;"><strong>挺好用的！！！五星好评！！！</strong></h5>
+				</div>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/mini.jpg">
+				<div class="mui-pull-caption">
+					迷你世界
+					<p class="mui-ellipsis">17681条评论</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.mini1.cn/" type="button" class="mui-btn mui-btn">
+						打开</a>
+				</div>
+				<div class="love ">
+					<div class="size">
+						<img src="images/xing.jpg" />&nbsp;&nbsp;&nbsp;版本号：1.2.3
+					</div>
+					<h5 style="color: #000000;"><strong>挺好用的！！！五星好评！！！</strong></h5>
+				</div>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/zuoyebang.jpg">
+				<div class="mui-pull-caption">
+					作业帮
+					<p class="mui-ellipsis">10178条评论</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.zybang.com/" type="button" class="mui-btn mui-btn">
+						打开</a>
+				</div>
+				<div class="love ">
+					<div class="size">
+						<img src="images/xing.jpg" />&nbsp;&nbsp;&nbsp;版本号：7.3.11
+					</div>
+					<h5 style="color: #000000;"><strong>挺好用的！！！五星好评！！！</strong></h5>
+				</div>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<img class="mui-media-object mui-pull-left" src="images/kuaishou.jpg">
+				<div class="mui-pull-caption">
+					快手
+					<p class="mui-ellipsis">32422条评论</p>
+				</div>
+				<div class="mui-pull-right">
+					<a href="https://www.kuaishou.com/" type="button" class="mui-btn mui-btn">
+						打开</a>
+				</div>
+				<div class="love ">
+					<div class="size">
+						<img src="images/xing.jpg" />&nbsp;&nbsp;&nbsp;版本号：11.3.0
+					</div>
+					<h5 style="color: #000000;"><strong>挺好用的！！！五星好评！！！</strong></h5>
+				</div>
+			</li>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui("body").on("tap", "a", function() {
+			document.location.href = this.href;
+		})
+	</script>
+</html>

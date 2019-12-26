@@ -54,41 +54,40 @@
 			<a class="mui-action-back mui-icon mui-icon-left-nav "></a>
 			<h1 class="mui-title">我的资料</h1>
 		</div>
-		</br></br><br/>
-	<form class="mui-input-group">	
-	    <div class="mui-input-row">
-	        <label>姓&nbsp;&nbsp;&nbsp;&nbsp;名：</label>
-	    <input type="text" class="mui-input-clear" placeholder="请输入姓名">
-	    </div>
-	    <div class="mui-input-row">
-	        <label>手机号：</label>
-	    <input type="text" class="mui-input-clear" placeholder="请输入手机号">
-	    </div>
-		<div class="mui-input-row">
-		    <label>邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
-		<input type="text" class="mui-input-clear" placeholder="请输入邮箱">
-		</div>
-		<div class="box">
-			<div class="box1">性&nbsp;&nbsp;&nbsp;&nbsp;别:</div>
-			<div class="box2">
-				<input name="radio" type="radio">男
+		</br></br><br />
+		<form class="mui-input-group">
+			<div class="mui-input-row">
+				<label>姓&nbsp;&nbsp;&nbsp;&nbsp;名：</label>
+				<input type="text" class="mui-input-clear" placeholder="请输入姓名">
 			</div>
-			<div class="box3">
-				<input name="radio" type="radio">女
+			<div class="mui-input-row">
+				<label>手机号：</label>
+				<input type="text" class="mui-input-clear" placeholder="请输入手机号">
 			</div>
-		</div>
-	</form>	
-	</br>
-	<a href="my.html">
-		<button type="button" class="mui-btn mui-btn-success mui-btn-block ">保存</button>
-	</a>
-		
+			<div class="mui-input-row">
+				<label>邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
+				<input type="text" class="mui-input-clear" placeholder="请输入邮箱">
+			</div>
+			<div class="box">
+				<div class="box1">性&nbsp;&nbsp;&nbsp;&nbsp;别:</div>
+				<div class="box2">
+					<input name="radio" type="radio">男
+				</div>
+				<div class="box3">
+					<input name="radio" type="radio">女
+				</div>
+			</div>
+		</form>
+		</br>
+		<a href="my.html">
+			<button type="button" class="mui-btn mui-btn-success mui-btn-block ">保存</button>
+		</a>
+
 	</body>
 	<script src="js/mui.min.js"></script>
 	<script type="text/javascript">
-		mui("body").on("tap","a",function(){
+		mui("body").on("tap", "a", function() {
 			document.location.href = this.href;
 		})
-		
 	</script>
 </html>
